@@ -1,4 +1,7 @@
-# test coverage for  [grunt-simple-mocha (v0.4.1)](https://github.com/yaymukund/grunt-simple-mocha)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-simple-mocha.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-simple-mocha) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-simple-mocha.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-simple-mocha)
+# npmtest-grunt-simple-mocha
+
+#### basic test coverage for  [grunt-simple-mocha (v0.4.1)](https://github.com/yaymukund/grunt-simple-mocha)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-simple-mocha.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-simple-mocha) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-simple-mocha.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-simple-mocha)
+
 #### A simple wrapper for running tests with Mocha.
 
 [![NPM](https://nodei.co/npm/grunt-simple-mocha.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-simple-mocha)
@@ -32,40 +35,21 @@
 ```json
 
 {
+    "name": "grunt-simple-mocha",
+    "description": "A simple wrapper for running tests with Mocha.",
+    "version": "0.4.1",
+    "homepage": "https://github.com/yaymukund/grunt-simple-mocha",
     "author": {
         "name": "Mukund Lakshman",
         "url": "http://yaymukund.com"
     },
-    "bin": {
-        "grunt-simple-mocha": "bin/grunt-simple-mocha"
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yaymukund/grunt-simple-mocha.git"
     },
     "bugs": {
         "url": "https://github.com/yaymukund/grunt-simple-mocha/issues"
     },
-    "dependencies": {
-        "mocha": "*"
-    },
-    "description": "A simple wrapper for running tests with Mocha.",
-    "devDependencies": {
-        "grunt": "0.4.x",
-        "grunt-contrib-jshint": "0.1.x",
-        "mocha": "^2.3.4"
-    },
-    "directories": {},
-    "dist": {
-        "shasum": "579449249eaf0a81878fa72f3edab5145d45fd77",
-        "tarball": "https://registry.npmjs.org/grunt-simple-mocha/-/grunt-simple-mocha-0.4.1.tgz"
-    },
-    "engines": {
-        "node": "*"
-    },
-    "gitHead": "2d88e8fd37be0fa47b7bb54cc06e358152939ed0",
-    "homepage": "https://github.com/yaymukund/grunt-simple-mocha",
-    "keywords": [
-        "gruntplugin",
-        "mocha",
-        "test"
-    ],
     "licenses": [
         {
             "type": "MIT",
@@ -73,21 +57,26 @@
         }
     ],
     "main": "grunt.js",
-    "maintainers": [
-        {
-            "name": "yaymukund"
-        }
-    ],
-    "name": "grunt-simple-mocha",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/yaymukund/grunt-simple-mocha.git"
+    "bin": "bin/grunt-simple-mocha",
+    "engines": {
+        "node": "*"
     },
     "scripts": {
         "test": "node_modules/mocha/bin/mocha tests/acceptance-tests.js"
     },
-    "version": "0.4.1"
+    "dependencies": {
+        "mocha": "*"
+    },
+    "devDependencies": {
+        "grunt": "0.4.x",
+        "grunt-contrib-jshint": "0.1.x",
+        "mocha": "^2.3.4"
+    },
+    "keywords": [
+        "gruntplugin",
+        "mocha",
+        "test"
+    ]
 }
 ```
 
